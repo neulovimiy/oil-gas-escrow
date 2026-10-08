@@ -1,0 +1,23 @@
+{
+  "name": "oil-gas-escrow",
+  "version": "1.0.0",
+  "description": "Эскроу-смартконтракт для поставки нефти/газа (Solidity + Hardhat + OpenZeppelin)",
+  "private": true,
+  "scripts": {
+    "compile": "hardhat compile",
+    "test": "hardhat test",
+    "test:gas": "cross-env REPORT_GAS=true hardhat test",
+    "coverage": "hardhat coverage",
+    "node": "hardhat node",
+    "deploy:local": "hardhat run scripts/deploy.js --network localhost",
+    "demo": "hardhat run scripts/demo.js"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^5.0.0",
+    "cross-env": "^7.0.3",
+    "hardhat": "^2.22.17"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^5.1.0"
+  }
+}
